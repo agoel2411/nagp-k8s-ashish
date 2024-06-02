@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongoexpress-configmap
+  namespace: nagp-k8s-ashish
+data:
+  database_url: mongodb-service

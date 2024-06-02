@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-pvc
+  namespace: nagp-k8s-ashish
+  annotations:
+    # volume.beta.kubernetes.io/storage-class: standard
+    storageClassName: standard  
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
